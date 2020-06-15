@@ -1,4 +1,4 @@
-class scr_change:
+class It322:
     def solution(self, amount, coins):
         dp = [amount + 1]*(amount+1)
         dp[0] = 0
@@ -10,5 +10,5 @@ class scr_change:
         if dp[amount] == amount + 1: return -1
         return dp[amount]
 
-a = scr_change
-print(a.solution(a,2, [3]))
+a = It322()
+print(a.solution(2, [3]))
